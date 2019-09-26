@@ -9,9 +9,9 @@ script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=thibautpe_formationSonar
   
   notifications:
-  email:
+email:
     recipients:
       - thibautpe@free.fr
       - thibautpe@free.fr
-    on_success: never # default: change
+    on_success: always # default: change
     on_failure: always # default: always
